@@ -1,0 +1,2 @@
+print("mama")
+print("ianvari")
