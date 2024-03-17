@@ -1,3 +1,5 @@
-print("mama")
-print("ianvari")
-sdfsfd
+deda="tea dzamashivli"
+mama="davit varazashvili"
+da="natali varazashvili"
+print(deda + " " + mama)
+print(da)
