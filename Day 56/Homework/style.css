@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./chureito-pagoda-and-mt-fuji-5c2fd0d546e0fb00015d4ed0.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.profile-box{
+    background: rgb(0, 119, 255);
+    text-align: center;
+    padding: 40px 90px;
+    color: rgb(35, 212, 0);
+    position: relative;
+    border-radius: 20px;
+
+}
+
