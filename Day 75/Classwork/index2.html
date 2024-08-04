@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>სათაური</h1>
+    <p>პარაგრაფი.</p>
+    <button onclick="alert('გამარჯობა!')">დააჭირე აქ</button>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>სატესტო დოკუმენტი</title>
+</head>
+<body>
+    <h1>სათაური</h1>
+    <p>ეს არის სატესტო პარაგრაფი.</p>
+    <button onclick="changeHeaderText()">დააჭირე აქ</button>
+
+    <script>
+        function changeHeaderText() {
+            var header = document.querySelector('h1');
+            header.textContent = 'ახალი სათაური';
+        }
+    </script>
+</body>
+</html>

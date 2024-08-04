@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  .walker {
+    position: relative;
+    width: 50px;
+    height: 100px;
+  }
+  
+  .body {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 10px;
+    height: 60px;
+    background-color: #000;
+  }
+  
+  .head {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+  }
+  
+  .leg, .arm {
+    position: absolute;
+    width: 10px;
+    height: 40px;
+    background-color: #000;
+    transform-origin: top;
+  }
+  
+  .leg.left {
+    top: 80px;
+    left: 15px;
+    animation: leg-left 1s infinite;
+  }
+  
+  .leg.right {
+    top: 80px;
+    left: 25px;
+    animation: leg-right 1s infinite;
+  }
+  
+  .arm.left {
+    top: 20px;
+    left: 10px;
+    animation: arm-left 1s infinite;
+  }
+  
+  .arm.right {
+    top: 20px;
+    left: 30px;
+    animation: arm-right 1s infinite;
+  }
+  
+  @keyframes leg-left {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(45deg); }
+  }
+  
+  @keyframes leg-right {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(-45deg); }
+  }
+  
+  @keyframes arm-left {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(-45deg); }
+  }
+  
+  @keyframes arm-right {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(45deg); }
+  }
+  
