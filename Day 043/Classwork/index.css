@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    font-size: large;
+}
+
+form{
+    background-color: rgb(40, 43, 43);
+}
+
+#sub{
+    background-color:  rgb(255, 0, 13);
+}
+
+#clear{
+    background-color: rgb(59, 206, 255);
+}

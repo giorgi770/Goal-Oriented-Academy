@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Database Search</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search for a Movie</h1>
+        <input type="text" id="movieInput" placeholder="Enter movie title" />
+        <button id="searchButton">Search</button>
+        
+        <div id="movieDetails" class="hidden">
+            <h2 id="movieTitle"></h2>
+            <img id="moviePoster" alt="Movie Poster" />
+            <p id="movieYear"></p>
+            <p id="moviePlot"></p>
+            <p id="movieRating"></p>
+        </div>
+        
+        <p id="errorMessage" class="hidden">Movie not found!</p>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

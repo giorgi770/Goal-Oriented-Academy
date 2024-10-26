@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #495d62; /* Green background */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue; /* Blue box */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
