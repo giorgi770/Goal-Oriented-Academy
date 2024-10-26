@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Feed</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#news-feed" onclick="showSection('news-feed')">News Feed</a></li>
+      <li><a href="#registration" onclick="showSection('registration')">Registration</a></li>
+      <li><a href="#authorization" onclick="showSection('authorization')">Authorization</a></li>
+    </ul>
+  </nav>
+
+  <!-- Filter Section -->
+  <section id="filters">
+    <input type="text" id="searchTitle" placeholder="Search by title" oninput="filterPosts()">
+    <button onclick="sortPosts()">Sort by Title (Ascending)</button>
+
+    <!-- Checkbox Tag Filters -->
+    <div id="tagFilters"></div>
+  </section>
+
+  <!-- News Feed Section -->
+  <section id="news-feed" class="section"></section>
+
+  <!-- Registration Section -->
+  <section id="registration" class="section" style="display: none;">
+    <h2>Registration</h2>
+    <form id="registrationForm">
+      <label for="reg-username">Username:</label>
+      <input type="text" id="reg-username" required>
+      <label for="reg-password">Password:</label>
+      <input type="password" id="reg-password" required>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- Authorization Section -->
+  <section id="authorization" class="section" style="display: none;">
+    <h2>Authorization</h2>
+    <form id="authorizationForm">
+      <label for="auth-username">Username:</label>
+      <input type="text" id="auth-username" required>
+      <label for="auth-password">Password:</label>
+      <input type="password" id="auth-password" required>
+      <button type="submit">Log In</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
